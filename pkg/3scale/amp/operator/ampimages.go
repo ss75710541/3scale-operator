@@ -19,38 +19,44 @@ func (o *OperatorAmpImagesOptionsProvider) GetAmpImagesOptions() (*component.Amp
 
 	optProv.AppLabel(*o.APIManagerSpec.AppLabel)
 	optProv.AMPRelease(string(productVersion))
-	if o.APIManagerSpec.ApicastSpec != nil && o.APIManagerSpec.ApicastSpec.Image != nil {
-		optProv.ApicastImage(*o.APIManagerSpec.ApicastSpec.Image)
+
+	apicastSpec := o.APIManagerSpec.ApicastSpec
+	backendSpec := o.APIManagerSpec.BackendSpec
+	wildcardRouterSpec := o.APIManagerSpec.WildcardRouterSpec
+	systemSpec := o.APIManagerSpec.SystemSpec
+	zyncSpec := o.APIManagerSpec.ZyncSpec
+	if apicastSpec != nil && apicastSpec.Image != nil {
+		optProv.ApicastImage(*apicastSpec.Image)
 	} else {
 		optProv.ApicastImage(imageProvider.GetApicastImage())
 	}
 
-	if o.APIManagerSpec.BackendSpec != nil && o.APIManagerSpec.BackendSpec.Image != nil {
-		optProv.BackendImage(*o.APIManagerSpec.BackendSpec.Image)
+	if backendSpec != nil && backendSpec.Image != nil {
+		optProv.BackendImage(*backendSpec.Image)
 	} else {
 		optProv.BackendImage(imageProvider.GetBackendImage())
 	}
 
-	if o.APIManagerSpec.WildcardRouterSpec != nil && o.APIManagerSpec.WildcardRouterSpec.Image != nil {
-		optProv.RouterImage(*o.APIManagerSpec.WildcardRouterSpec.Image)
+	if wildcardRouterSpec != nil && wildcardRouterSpec.Image != nil {
+		optProv.RouterImage(*wildcardRouterSpec.Image)
 	} else {
 		optProv.RouterImage(imageProvider.GetWildcardRouterImage())
 	}
 
-	if o.APIManagerSpec.SystemSpec != nil && o.APIManagerSpec.SystemSpec.Image != nil {
-		optProv.SystemImage(*o.APIManagerSpec.SystemSpec.Image)
+	if systemSpec != nil && systemSpec.Image != nil {
+		optProv.SystemImage(*systemSpec.Image)
 	} else {
 		optProv.SystemImage(imageProvider.GetSystemImage())
 	}
 
-	if o.APIManagerSpec.ZyncSpec != nil && o.APIManagerSpec.ZyncSpec.Image != nil {
-		optProv.ZyncImage(*o.APIManagerSpec.ZyncSpec.Image)
+	if zyncSpec != nil && zyncSpec.Image != nil {
+		optProv.ZyncImage(*zyncSpec.Image)
 	} else {
 		optProv.ZyncImage(imageProvider.GetZyncImage())
 	}
 
-	if o.APIManagerSpec.ZyncSpec != nil && o.APIManagerSpec.ZyncSpec.PostgreSQLImage != nil {
-		optProv.PostgreSQLImage(*o.APIManagerSpec.ZyncSpec.PostgreSQLImage)
+	if zyncSpec != nil && zyncSpec.PostgreSQLImage != nil {
+		optProv.PostgreSQLImage(*zyncSpec.PostgreSQLImage)
 	} else {
 		optProv.PostgreSQLImage(imageProvider.GetZyncPostgreSQLImage())
 	}

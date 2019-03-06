@@ -17,8 +17,10 @@ func (o *OperatorMemcachedOptionsProvider) GetMemcachedOptions() (*component.Mem
 
 	optProv := component.MemcachedOptionsBuilder{}
 	optProv.AppLabel(*o.APIManagerSpec.AppLabel)
-	if o.APIManagerSpec.SystemSpec != nil && o.APIManagerSpec.SystemSpec.MemcachedImage != nil {
-		optProv.Image(*o.APIManagerSpec.SystemSpec.MemcachedImage)
+
+	systemSpec := o.APIManagerSpec.SystemSpec
+	if systemSpec != nil && systemSpec.MemcachedImage != nil {
+		optProv.Image(*systemSpec.MemcachedImage)
 	} else {
 		optProv.Image(imageProvider.GetSystemMemcachedImage())
 	}

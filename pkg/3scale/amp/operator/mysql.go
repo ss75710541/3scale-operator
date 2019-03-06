@@ -21,9 +21,11 @@ func (o *OperatorMysqlOptionsProvider) GetMysqlOptions() (*component.MysqlOption
 	}
 
 	optProv.AppLabel(*o.APIManagerSpec.AppLabel)
-	if o.APIManagerSpec.SystemSpec != nil && o.APIManagerSpec.SystemSpec.DatabaseSpec != nil &&
-		o.APIManagerSpec.SystemSpec.DatabaseSpec.MySQLSpec != nil && o.APIManagerSpec.SystemSpec.DatabaseSpec.MySQLSpec.Image != nil {
-		optProv.Image(*o.APIManagerSpec.SystemSpec.DatabaseSpec.MySQLSpec.Image)
+
+	systemSpec := o.APIManagerSpec.SystemSpec
+	if systemSpec != nil && systemSpec.DatabaseSpec != nil &&
+		systemSpec.DatabaseSpec.MySQLSpec != nil && systemSpec.DatabaseSpec.MySQLSpec.Image != nil {
+		optProv.Image(*systemSpec.DatabaseSpec.MySQLSpec.Image)
 	} else {
 		optProv.Image(imageProvider.GetSystemMySQLImage())
 	}

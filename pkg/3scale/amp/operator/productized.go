@@ -18,32 +18,38 @@ func (o *OperatorProductizedOptionsProvider) GetProductizedOptions() (*component
 
 	pob.AmpRelease(string(productVersion))
 
-	if o.APIManagerSpec.ApicastSpec != nil && o.APIManagerSpec.ApicastSpec.Image != nil {
-		pob.ApicastImage(*o.APIManagerSpec.ApicastSpec.Image)
+	apicastSpec := o.APIManagerSpec.ApicastSpec
+	backendSpec := o.APIManagerSpec.BackendSpec
+	wildcardRouterSpec := o.APIManagerSpec.WildcardRouterSpec
+	systemSpec := o.APIManagerSpec.SystemSpec
+	zyncSpec := o.APIManagerSpec.ZyncSpec
+
+	if apicastSpec != nil && apicastSpec.Image != nil {
+		pob.ApicastImage(*apicastSpec.Image)
 	} else {
 		pob.ApicastImage(imageProvider.GetApicastImage())
 	}
 
-	if o.APIManagerSpec.BackendSpec != nil && o.APIManagerSpec.BackendSpec.Image != nil {
-		pob.BackendImage(*o.APIManagerSpec.BackendSpec.Image)
+	if backendSpec != nil && backendSpec.Image != nil {
+		pob.BackendImage(*backendSpec.Image)
 	} else {
 		pob.BackendImage(imageProvider.GetBackendImage())
 	}
 
-	if o.APIManagerSpec.WildcardRouterSpec != nil && o.APIManagerSpec.WildcardRouterSpec.Image != nil {
-		pob.RouterImage(*o.APIManagerSpec.WildcardRouterSpec.Image)
+	if wildcardRouterSpec != nil && wildcardRouterSpec.Image != nil {
+		pob.RouterImage(*wildcardRouterSpec.Image)
 	} else {
 		pob.RouterImage(imageProvider.GetWildcardRouterImage())
 	}
 
-	if o.APIManagerSpec.SystemSpec != nil && o.APIManagerSpec.SystemSpec.Image != nil {
-		pob.SystemImage(*o.APIManagerSpec.SystemSpec.Image)
+	if systemSpec != nil && systemSpec.Image != nil {
+		pob.SystemImage(*systemSpec.Image)
 	} else {
 		pob.SystemImage(imageProvider.GetSystemImage())
 	}
 
-	if o.APIManagerSpec.ZyncSpec != nil && o.APIManagerSpec.ZyncSpec.Image != nil {
-		pob.ZyncImage(*o.APIManagerSpec.ZyncSpec.Image)
+	if zyncSpec != nil && zyncSpec.Image != nil {
+		pob.ZyncImage(*zyncSpec.Image)
 	} else {
 		pob.ZyncImage(imageProvider.GetZyncImage())
 	}
