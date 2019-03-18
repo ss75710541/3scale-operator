@@ -10,7 +10,7 @@ commands:
             cd ${GOPATH}/src/github.com/operator-framework
             git clone https://github.com/operator-framework/operator-sdk
             cd operator-sdk
-            git checkout 99ae4aed7387dcfdc07ecf6169cf35b7bca47924
+            git checkout v0.6.0 -b v0.6.0
             make dep
             make install
 

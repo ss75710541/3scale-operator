@@ -23,6 +23,12 @@ rules:
   verbs:
   - '*'
 - apiGroups:
+  - ""
+  resources:
+  - namespaces
+  verbs:
+  - get
+- apiGroups:
   - apps
   resources:
   - deployments
@@ -77,3 +83,11 @@ rules:
   - tenants
   verbs:
   - '*'
+- apiGroups:
+  - apps
+  resources:
+  - deployments/finalizers
+  resourceNames:
+  - 3scale-operator
+  verbs:
+  - "update"
