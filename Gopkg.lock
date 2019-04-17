@@ -11,7 +11,7 @@
 
 [[projects]]
   digest = "1:78446fe2d2a154fc400b8d2b3dfbf2111b7a62c5b77f1ee713b0f850de6a29cd"
-  name = "github.com/3scale/3scale-operator"
+  name = "github.com/ss75710541/3scale-operator"
   packages = [
     "pkg/3scale/amp/component",
     "pkg/3scale/amp/operator",
@@ -1172,19 +1172,19 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/3scale/3scale-operator/pkg/3scale/amp/component",
-    "github.com/3scale/3scale-operator/pkg/3scale/amp/operator",
-    "github.com/3scale/3scale-operator/pkg/3scale/amp/product",
-    "github.com/3scale/3scale-operator/pkg/apis",
-    "github.com/3scale/3scale-operator/pkg/apis/apps",
-    "github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1",
-    "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1",
-    "github.com/3scale/3scale-operator/pkg/controller",
-    "github.com/3scale/3scale-operator/pkg/controller/apimanager",
-    "github.com/3scale/3scale-operator/pkg/controller/binding",
-    "github.com/3scale/3scale-operator/pkg/controller/tenant",
-    "github.com/3scale/3scale-operator/pkg/helper",
-    "github.com/3scale/3scale-operator/test/e2e/e2eutil",
+    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/component",
+    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/operator",
+    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/product",
+    "github.com/ss75710541/3scale-operator/pkg/apis",
+    "github.com/ss75710541/3scale-operator/pkg/apis/apps",
+    "github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1",
+    "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1",
+    "github.com/ss75710541/3scale-operator/pkg/controller",
+    "github.com/ss75710541/3scale-operator/pkg/controller/apimanager",
+    "github.com/ss75710541/3scale-operator/pkg/controller/binding",
+    "github.com/ss75710541/3scale-operator/pkg/controller/tenant",
+    "github.com/ss75710541/3scale-operator/pkg/helper",
+    "github.com/ss75710541/3scale-operator/test/e2e/e2eutil",
     "github.com/3scale/3scale-porta-go-client/client",
     "github.com/go-logr/logr",
     "github.com/go-openapi/spec",
