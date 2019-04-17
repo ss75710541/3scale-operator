@@ -3,8 +3,8 @@ package operator
 import (
 	"fmt"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/component"
-	oprand "github.com/3scale/3scale-operator/pkg/crypto/rand"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/component"
+	oprand "github.com/ss75710541/3scale-operator/pkg/crypto/rand"
 	"k8s.io/apimachinery/pkg/api/errors"
 )
 

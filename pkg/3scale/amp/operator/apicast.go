@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/component"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/component"
 )
 
 func (o *OperatorApicastOptionsProvider) GetApicastOptions() (*component.ApicastOptions, error) {
