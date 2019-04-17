@@ -19,10 +19,10 @@ dep-check:
 vendor Gopkg.lock: Gopkg.toml
 	dep ensure -v
 
-IMAGE ?= quay.io/3scale/3scale-operator
+IMAGE ?= ss75710541/3scale-operator
 SOURCE_VERSION ?= master
-VERSION ?= v0.0.1
-NAMESPACE ?= operator-test
+VERSION ?= v0.2.0
+NAMESPACE ?= apigateway
 
 ## build: Build operator
 build:
