@@ -3367,11 +3367,11 @@ parameters:
 - description: Postgresql image to use
   name: POSTGRESQL_IMAGE
   required: true
-  value: registry.access.redhat.com/rhscl/postgresql-10-rhel7
+  value: docker.io/centos/postgresql-10-centos7
 - description: Memcached image to use
   name: MEMCACHED_IMAGE
   required: true
-  value: registry.access.redhat.com/3scale-amp20/memcached
+  value: docker.io/library/memcached
 - description: Set to true if the server may bypass certificate verification or connect
     directly over HTTP during image import.
   name: IMAGESTREAM_TAG_IMPORT_INSECURE
