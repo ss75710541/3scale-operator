@@ -2,7 +2,7 @@ package e2eutil
 
 import (
 	"context"
-	"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1"
+	"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1"
 	"github.com/operator-framework/operator-sdk/pkg/test"
 	"k8s.io/apimachinery/pkg/types"
 	"testing"

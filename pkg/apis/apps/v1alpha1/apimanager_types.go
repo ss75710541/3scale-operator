@@ -6,7 +6,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/product"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/product"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!

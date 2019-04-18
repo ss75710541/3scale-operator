@@ -3,7 +3,7 @@ package v1alpha1
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/3scale/3scale-operator/pkg/helper"
+	"github.com/ss75710541/3scale-operator/pkg/helper"
 	portaClient "github.com/3scale/3scale-porta-go-client/client"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1"
+	"github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1"
 	appsv1 "github.com/openshift/api/apps/v1"
 	imagev1 "github.com/openshift/api/image/v1"
 	routev1 "github.com/openshift/api/route/v1"

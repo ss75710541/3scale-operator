@@ -3,7 +3,7 @@ package tenant
 import (
 	"net/url"
 
-	apiv1alpha1 "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1"
+	apiv1alpha1 "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
