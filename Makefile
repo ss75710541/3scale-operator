@@ -21,7 +21,7 @@ vendor Gopkg.lock: Gopkg.toml
 
 IMAGE ?= ss75710541/3scale-operator
 SOURCE_VERSION ?= master
-VERSION ?= v0.2.0
+VERSION ?= v0.2.0.1
 NAMESPACE ?= apigateway
 
 ## build: Build operator
