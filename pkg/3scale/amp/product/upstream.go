@@ -31,7 +31,7 @@ func (u *upstream) GetSystemPostgreSQLImage() string {
 }
 
 func (u *upstream) GetSystemMemcachedImage() string {
-	return "docker.io/library/memcached"
+	return "docker.io/ss75710541/docker-memcached"
 }
 
 func (u *upstream) GetWildcardRouterImage() string {
