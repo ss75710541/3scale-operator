@@ -93,5 +93,5 @@ required = [
 
 [[override]]
   name = "github.com/ss75710541/3scale-operator"
-  revision = "388d2545a52beb66e2ae85d0f400a6f994f52010"
+  revision = "183165e75146dff8c4ecea5f72a2e0e406d47852"
 
