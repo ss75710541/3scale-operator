@@ -633,7 +633,7 @@
   version = "v1.3.2"
 
 [[projects]]
-  digest = "1:cc03f15b5667b04161dd62dc0bc8538b3d987966e913f421dbe0dc8488e04a5a"
+  digest = "1:ae5d5c4c78fc217c890a16acf8c21a706a8f07e9e89526cc9c36121ff263d360"
   name = "github.com/ss75710541/3scale-operator"
   packages = [
     "pkg/3scale/amp/cmd",
@@ -653,7 +653,7 @@
     "test/e2e/e2eutil",
   ]
   pruneopts = "NT"
-  revision = "cd4c29df90a3d3c7bcd81d5681f92302ed800884"
+  revision = "388d2545a52beb66e2ae85d0f400a6f994f52010"
 
 [[projects]]
   digest = "1:22f696cee54865fb8e9ff91df7b633f6b8f22037a8015253c6b6a71ca82219c7"
