@@ -23,7 +23,7 @@ func (p *release_2_5) GetSystemRedisImage() string {
 }
 
 func (p *release_2_5) GetSystemMySQLImage() string {
-	return "docker.io/centos/mysql-57-rhel7:5.7"
+	return "docker.io/centos/mysql-57-centos7:5.7"
 }
 
 func (p *release_2_5) GetSystemPostgreSQLImage() string {

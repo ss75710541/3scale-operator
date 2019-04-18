@@ -23,7 +23,7 @@ func (u *upstream) GetSystemRedisImage() string {
 }
 
 func (u *upstream) GetSystemMySQLImage() string {
-	return "docker.io/centos/mysql-57-rhel7:5.7"
+	return "docker.io/centos/mysql-57-centos7:5.7"
 }
 
 func (u *upstream) GetSystemPostgreSQLImage() string {
