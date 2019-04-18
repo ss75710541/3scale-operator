@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/3scale/3scale-operator/pkg/controller/binding"
+	"github.com/ss75710541/3scale-operator/pkg/controller/binding"
 )
 
 func init() {

@@ -400,19 +400,19 @@ func (ampImages *AmpImages) buildParameters(template *templatev1.Template) {
 		templatev1.Parameter{
 			Name:        "POSTGRESQL_IMAGE",
 			Description: "Postgresql image to use",
-			Value:       "registry.access.redhat.com/rhscl/postgresql-10-rhel7",
+			Value:       "docker.io/centos/postgresql-10-centos7",
 			Required:    true,
 		},
 		templatev1.Parameter{
 			Name:        "MYSQL_IMAGE",
 			Description: "Mysql image to use",
-			Value:       "registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7",
+			Value:       "docker.io/centos/mysql-57-rhel7:5.7",
 			Required:    true,
 		},
 		templatev1.Parameter{
 			Name:        "MEMCACHED_IMAGE",
 			Description: "Memcached image to use",
-			Value:       "registry.access.redhat.com/3scale-amp20/memcached",
+			Value:       "docker.io/library/memcached",
 			Required:    true,
 		},
 		templatev1.Parameter{

@@ -48,7 +48,7 @@ Download the 3scale-operator project:
 ```sh
 mkdir -p $GOPATH/src/github.com/3scale
 cd $GOPATH/src/github.com/3scale
-git clone https://github.com/3scale/3scale-operator
+git clone https://github.com/ss75710541/3scale-operator
 cd 3scale-operator
 git checkout master
 ```

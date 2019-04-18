@@ -12,7 +12,7 @@
 
 package main
 
-import "github.com/3scale/3scale-operator/pkg/3scale/amp/cmd"
+import "github.com/ss75710541/3scale-operator/pkg/3scale/amp/cmd"
 
 func main() {
 	cmd.Execute()

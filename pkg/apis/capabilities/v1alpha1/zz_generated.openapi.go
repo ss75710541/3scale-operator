@@ -13,13 +13,13 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.API":         schema_pkg_apis_capabilities_v1alpha1_API(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.Binding":     schema_pkg_apis_capabilities_v1alpha1_Binding(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.Limit":       schema_pkg_apis_capabilities_v1alpha1_Limit(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRule": schema_pkg_apis_capabilities_v1alpha1_MappingRule(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.Metric":      schema_pkg_apis_capabilities_v1alpha1_Metric(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.Plan":        schema_pkg_apis_capabilities_v1alpha1_Plan(ref),
-		"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.Tenant":      schema_pkg_apis_capabilities_v1alpha1_Tenant(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.API":         schema_pkg_apis_capabilities_v1alpha1_API(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.Binding":     schema_pkg_apis_capabilities_v1alpha1_Binding(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.Limit":       schema_pkg_apis_capabilities_v1alpha1_Limit(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRule": schema_pkg_apis_capabilities_v1alpha1_MappingRule(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.Metric":      schema_pkg_apis_capabilities_v1alpha1_Metric(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.Plan":        schema_pkg_apis_capabilities_v1alpha1_Plan(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.Tenant":      schema_pkg_apis_capabilities_v1alpha1_Tenant(ref),
 	}
 }
 
@@ -50,19 +50,19 @@ func schema_pkg_apis_capabilities_v1alpha1_API(ref common.ReferenceCallback) com
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.APISpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.APISpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.APIStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.APIStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.APISpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.APIStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.APISpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.APIStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -93,19 +93,19 @@ func schema_pkg_apis_capabilities_v1alpha1_Binding(ref common.ReferenceCallback)
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.BindingStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -136,19 +136,19 @@ func schema_pkg_apis_capabilities_v1alpha1_Limit(ref common.ReferenceCallback) c
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.LimitStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -179,19 +179,19 @@ func schema_pkg_apis_capabilities_v1alpha1_MappingRule(ref common.ReferenceCallb
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MappingRuleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -222,19 +222,19 @@ func schema_pkg_apis_capabilities_v1alpha1_Metric(ref common.ReferenceCallback) 
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.MetricStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -265,19 +265,19 @@ func schema_pkg_apis_capabilities_v1alpha1_Plan(ref common.ReferenceCallback) co
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.PlanStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -308,18 +308,18 @@ func schema_pkg_apis_capabilities_v1alpha1_Tenant(ref common.ReferenceCallback) 
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantSpec", "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantSpec", "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1.TenantStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }

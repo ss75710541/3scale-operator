@@ -5,9 +5,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/component"
-	apiv1alpha1 "github.com/3scale/3scale-operator/pkg/apis/capabilities/v1alpha1"
-	"github.com/3scale/3scale-operator/pkg/helper"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/component"
+	apiv1alpha1 "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1"
+	"github.com/ss75710541/3scale-operator/pkg/helper"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime"

@@ -10,8 +10,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/3scale/3scale-operator/pkg/apis"
-	"github.com/3scale/3scale-operator/pkg/controller"
+	"github.com/ss75710541/3scale-operator/pkg/apis"
+	"github.com/ss75710541/3scale-operator/pkg/controller"
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"
 	sdkVersion "github.com/operator-framework/operator-sdk/version"

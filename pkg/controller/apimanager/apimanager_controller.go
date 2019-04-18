@@ -7,10 +7,10 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/component"
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/operator"
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/product"
-	appsv1alpha1 "github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/component"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/operator"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/product"
+	appsv1alpha1 "github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

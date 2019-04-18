@@ -11,7 +11,7 @@ func (u *upstream) GetBackendImage() string {
 }
 
 func (u *upstream) GetBackendRedisImage() string {
-	return "registry.access.redhat.com/rhscl/redis-32-rhel7:3.2"
+	return "docker.io/centos/redis-32-centos7:3.2"
 }
 
 func (u *upstream) GetSystemImage() string {
@@ -19,19 +19,19 @@ func (u *upstream) GetSystemImage() string {
 }
 
 func (u *upstream) GetSystemRedisImage() string {
-	return "registry.access.redhat.com/rhscl/redis-32-rhel7:3.2"
+	return "docker.io/centos/redis-32-centos7:3.2"
 }
 
 func (u *upstream) GetSystemMySQLImage() string {
-	return "registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7"
+	return "docker.io/centos/mysql-57-rhel7:5.7"
 }
 
 func (u *upstream) GetSystemPostgreSQLImage() string {
-	return "registry.access.redhat.com/rhscl/postgresql-10-rhel7"
+	return "docker.io/centos/postgresql-10-centos7"
 }
 
 func (u *upstream) GetSystemMemcachedImage() string {
-	return "registry.access.redhat.com/3scale-amp20/memcached"
+	return "docker.io/library/memcached"
 }
 
 func (u *upstream) GetWildcardRouterImage() string {
@@ -43,5 +43,5 @@ func (u *upstream) GetZyncImage() string {
 }
 
 func (u *upstream) GetZyncPostgreSQLImage() string {
-	return "registry.access.redhat.com/rhscl/postgresql-10-rhel7"
+	return "docker.io/centos/postgresql-10-centos7"
 }

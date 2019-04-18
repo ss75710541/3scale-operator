@@ -16,9 +16,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/3scale/3scale-operator/pkg/3scale/amp/component"
 	templatev1 "github.com/openshift/api/template/v1"
 	"github.com/spf13/cobra"
+	"github.com/ss75710541/3scale-operator/pkg/3scale/amp/component"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	yaml "gopkg.in/yaml.v2"

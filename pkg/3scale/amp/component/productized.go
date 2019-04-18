@@ -117,15 +117,15 @@ func (productized *Productized) updateAmpImagesParameters(template *templatev1.T
 		param := &template.Parameters[paramIdx]
 		switch param.Name {
 		case "AMP_SYSTEM_IMAGE":
-			param.Value = "registry.access.redhat.com/3scale-amp25/system"
+			param.Value = "quay.io/3scale/porta:nightly"
 		case "AMP_BACKEND_IMAGE":
-			param.Value = "registry.access.redhat.com/3scale-amp25/backend"
+			param.Value = "quay.io/3scale/apisonator:nightly"
 		case "AMP_APICAST_IMAGE":
-			param.Value = "registry.access.redhat.com/3scale-amp25/apicast-gateway"
+			param.Value = "quay.io/3scale/apicast:nightly"
 		case "AMP_ROUTER_IMAGE":
-			param.Value = "registry.access.redhat.com/3scale-amp22/wildcard-router"
+			param.Value = "quay.io/3scale/wildcard-router:nightly"
 		case "AMP_ZYNC_IMAGE":
-			param.Value = "registry.access.redhat.com/3scale-amp25/zync"
+			param.Value = "quay.io/3scale/zync:nightly"
 		}
 	}
 }

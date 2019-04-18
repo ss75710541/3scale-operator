@@ -3,45 +3,45 @@ package product
 type release_2_5 struct{}
 
 func (p *release_2_5) GetApicastImage() string {
-	return "registry.access.redhat.com/3scale-amp25/apicast-gateway"
+	return "quay.io/3scale/apicast:nightly"
 }
 
 func (p *release_2_5) GetBackendImage() string {
-	return "registry.access.redhat.com/3scale-amp25/backend"
+	return "quay.io/3scale/apisonator:nightly"
 }
 
 func (p *release_2_5) GetBackendRedisImage() string {
-	return "registry.access.redhat.com/rhscl/redis-32-rhel7:3.2"
+	return "docker.io/centos/redis-32-centos7:3.2"
 }
 
 func (p *release_2_5) GetSystemImage() string {
-	return "registry.access.redhat.com/3scale-amp25/system"
+	return "quay.io/3scale/porta:nightly"
 }
 
 func (p *release_2_5) GetSystemRedisImage() string {
-	return "registry.access.redhat.com/rhscl/redis-32-rhel7:3.2"
+	return "docker.io/centos/redis-32-centos7:3.2"
 }
 
 func (p *release_2_5) GetSystemMySQLImage() string {
-	return "registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7"
+	return "docker.io/centos/mysql-57-rhel7:5.7"
 }
 
 func (p *release_2_5) GetSystemPostgreSQLImage() string {
-	return "registry.access.redhat.com/rhscl/postgresql-10-rhel7"
+	return "docker.io/centos/postgresql-10-centos7"
 }
 
 func (p *release_2_5) GetSystemMemcachedImage() string {
-	return "registry.access.redhat.com/3scale-amp20/memcached"
+	return "docker.io/library/memcached"
 }
 
 func (p *release_2_5) GetWildcardRouterImage() string {
-	return "registry.access.redhat.com/3scale-amp22/wildcard-router"
+	return "quay.io/3scale/wildcard-router:nightly"
 }
 
 func (p *release_2_5) GetZyncImage() string {
-	return "registry.access.redhat.com/3scale-amp25/zync"
+	return "quay.io/3scale/zync:nightly"
 }
 
 func (p *release_2_5) GetZyncPostgreSQLImage() string {
-	return "registry.access.redhat.com/rhscl/postgresql-10-rhel7"
+	return "docker.io/centos/postgresql-10-centos7"
 }

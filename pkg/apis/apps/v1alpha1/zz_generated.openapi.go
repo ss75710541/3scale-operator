@@ -13,7 +13,7 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1.APIManager": schema_pkg_apis_apps_v1alpha1_APIManager(ref),
+		"github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1.APIManager": schema_pkg_apis_apps_v1alpha1_APIManager(ref),
 	}
 }
 
@@ -44,18 +44,18 @@ func schema_pkg_apis_apps_v1alpha1_APIManager(ref common.ReferenceCallback) comm
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerSpec"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerStatus"),
+							Ref: ref("github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerSpec", "github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerSpec", "github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1.APIManagerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
