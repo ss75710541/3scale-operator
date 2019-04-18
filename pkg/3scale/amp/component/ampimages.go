@@ -412,7 +412,7 @@ func (ampImages *AmpImages) buildParameters(template *templatev1.Template) {
 		templatev1.Parameter{
 			Name:        "MEMCACHED_IMAGE",
 			Description: "Memcached image to use",
-			Value:       "docker.io/ss75710541/memcached",
+			Value:       "docker.io/ss75710541/docker-memcached",
 			Required:    true,
 		},
 		templatev1.Parameter{
