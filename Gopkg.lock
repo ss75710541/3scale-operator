@@ -10,29 +10,6 @@
   version = "v0.36.0"
 
 [[projects]]
-  digest = "1:78446fe2d2a154fc400b8d2b3dfbf2111b7a62c5b77f1ee713b0f850de6a29cd"
-  name = "github.com/ss75710541/3scale-operator"
-  packages = [
-    "pkg/3scale/amp/component",
-    "pkg/3scale/amp/operator",
-    "pkg/3scale/amp/product",
-    "pkg/apis",
-    "pkg/apis/apps",
-    "pkg/apis/apps/v1alpha1",
-    "pkg/apis/capabilities/v1alpha1",
-    "pkg/controller",
-    "pkg/controller/apimanager",
-    "pkg/controller/binding",
-    "pkg/controller/tenant",
-    "pkg/crypto/rand",
-    "pkg/helper",
-    "test/e2e/e2eutil",
-  ]
-  pruneopts = "NT"
-  revision = "9dcb9630a9a6ae77db849efc724d048a4256470d"
-  version = "v0.2.0"
-
-[[projects]]
   branch = "master"
   digest = "1:d8bcb2ce4f09bfa6e1f953d5d0f64038080f3eac2d095f286b309158de0cc9fe"
   name = "github.com/3scale/3scale-porta-go-client"
@@ -665,6 +642,29 @@
   digest = "1:78446fe2d2a154fc400b8d2b3dfbf2111b7a62c5b77f1ee713b0f850de6a29cd"
   name = "github.com/ss75710541/3scale-operator"
   packages = [
+    "pkg/3scale/amp/component",
+    "pkg/3scale/amp/operator",
+    "pkg/3scale/amp/product",
+    "pkg/apis",
+    "pkg/apis/apps",
+    "pkg/apis/apps/v1alpha1",
+    "pkg/apis/capabilities/v1alpha1",
+    "pkg/controller",
+    "pkg/controller/apimanager",
+    "pkg/controller/binding",
+    "pkg/controller/tenant",
+    "pkg/crypto/rand",
+    "pkg/helper",
+    "test/e2e/e2eutil",
+  ]
+  pruneopts = "NT"
+  revision = "9dcb9630a9a6ae77db849efc724d048a4256470d"
+  version = "v0.2.0"
+
+[[projects]]
+  digest = "1:78446fe2d2a154fc400b8d2b3dfbf2111b7a62c5b77f1ee713b0f850de6a29cd"
+  name = "github.com/ss75710541/3scale-operator"
+  packages = [
     "pkg/3scale/amp/cmd",
     "pkg/3scale/amp/component",
     "pkg/3scale/amp/product",
@@ -1172,19 +1172,6 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/component",
-    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/operator",
-    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/product",
-    "github.com/ss75710541/3scale-operator/pkg/apis",
-    "github.com/ss75710541/3scale-operator/pkg/apis/apps",
-    "github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1",
-    "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1",
-    "github.com/ss75710541/3scale-operator/pkg/controller",
-    "github.com/ss75710541/3scale-operator/pkg/controller/apimanager",
-    "github.com/ss75710541/3scale-operator/pkg/controller/binding",
-    "github.com/ss75710541/3scale-operator/pkg/controller/tenant",
-    "github.com/ss75710541/3scale-operator/pkg/helper",
-    "github.com/ss75710541/3scale-operator/test/e2e/e2eutil",
     "github.com/3scale/3scale-porta-go-client/client",
     "github.com/go-logr/logr",
     "github.com/go-openapi/spec",
@@ -1216,9 +1203,19 @@
     "github.com/spf13/viper",
     "github.com/ss75710541/3scale-operator/pkg/3scale/amp/cmd",
     "github.com/ss75710541/3scale-operator/pkg/3scale/amp/component",
+    "github.com/ss75710541/3scale-operator/pkg/3scale/amp/operator",
     "github.com/ss75710541/3scale-operator/pkg/3scale/amp/product",
+    "github.com/ss75710541/3scale-operator/pkg/apis",
+    "github.com/ss75710541/3scale-operator/pkg/apis/apps",
     "github.com/ss75710541/3scale-operator/pkg/apis/apps/v1alpha1",
+    "github.com/ss75710541/3scale-operator/pkg/apis/capabilities/v1alpha1",
+    "github.com/ss75710541/3scale-operator/pkg/controller",
+    "github.com/ss75710541/3scale-operator/pkg/controller/apimanager",
+    "github.com/ss75710541/3scale-operator/pkg/controller/binding",
+    "github.com/ss75710541/3scale-operator/pkg/controller/tenant",
     "github.com/ss75710541/3scale-operator/pkg/crypto/rand",
+    "github.com/ss75710541/3scale-operator/pkg/helper",
+    "github.com/ss75710541/3scale-operator/test/e2e/e2eutil",
     "gopkg.in/yaml.v2",
     "k8s.io/api/core/v1",
     "k8s.io/apimachinery/pkg/api/errors",
