@@ -3834,7 +3834,7 @@ parameters:
 - description: Mysql image to use
   name: MYSQL_IMAGE
   required: true
-  value: docker.io/centos/mysql-57-rhel7:5.7
+  value: docker.io/centos/mysql-57-centos7:5.7
 - description: Memcached image to use
   name: MEMCACHED_IMAGE
   required: true
