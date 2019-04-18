@@ -3354,7 +3354,7 @@ parameters:
 - description: Memcached image to use
   name: MEMCACHED_IMAGE
   required: true
-  value: docker.io/ss75710541/memcached
+  value: docker.io/ss75710541/docker-memcached
 - description: Set to true if the server may bypass certificate verification or connect
     directly over HTTP during image import.
   name: IMAGESTREAM_TAG_IMPORT_INSECURE
