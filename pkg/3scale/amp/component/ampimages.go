@@ -406,7 +406,7 @@ func (ampImages *AmpImages) buildParameters(template *templatev1.Template) {
 		templatev1.Parameter{
 			Name:        "MYSQL_IMAGE",
 			Description: "Mysql image to use",
-			Value:       "docker.io/centos/mysql-57-rhel7:5.7",
+			Value:       "docker.io/centos/mysql-57-centos7:5.7",
 			Required:    true,
 		},
 		templatev1.Parameter{
